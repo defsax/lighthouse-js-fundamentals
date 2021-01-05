@@ -1,17 +1,17 @@
-const judgeVegetable = function(vegetables, metric){
+const judgeVegetable = function(vegetables, metric) {
   let best = 0;
-  var submitter = '';
+  let submitter = '';
   
-  for(let i of vegetables){
+  for (let i of vegetables) {
     console.log(i[metric]);
-    if(i[metric] > best){
+    if (i[metric] > best) {
       best = i[metric];
       submitter = i.submitter;
     }
   }
   
   return "'" + submitter + "'";
-}
+};
 
 const vegetables = [
   {
