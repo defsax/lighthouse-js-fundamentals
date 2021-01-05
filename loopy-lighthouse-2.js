@@ -1,11 +1,11 @@
-let loopyLighthouse = function(range, multiples, words){
+let loopyLighthouse = function(range, multiples, words) {
   let multipleOfBoth = multiples[0] * multiples[1];
-  for(let i = range[0]; i <= range[1]; i++){
-    if(i % multipleOfBoth === 0)
+  for (let i = range[0]; i <= range[1]; i++) {
+    if (i % multipleOfBoth === 0)
       console.log(words[0] + words[1]);
-    else if(i % multiples[0] === 0)
+    else if (i % multiples[0] === 0)
       console.log(words[0]);
-    else if(i % multiples[1] === 0)
+    else if (i % multiples[1] === 0)
       console.log(words[1]);
     else
       console.log(i);
